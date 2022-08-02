@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Only Organisation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="transparent_logo.png" sizes="96x96">
+</head>
+
+<body>
+<br>
+<h1 style="text-align: center;font-family: 'Mochiy Pop One', sans-serif;font-size: 50px;color: crimson;">Only Organisation</h1>
+  <section class="todoapp">
+    <header class="header">
+      <input id="newTodo" class="new-todo" placeholder="What needs to be done?">
+    </header>
+    <section id="main">
+      <input id="toggleInputAll" class="toggle-all" type="checkbox">
+      <label for="toggle-all">Mark all as complete</label>
+      <ul id="todoListView" class="todo-list"></ul>
+    </section>
+    <footer class="footer">
+      <span class="todo-count"><strong id="todoCount">0</strong> item left</span>
+      <ul class="filters">
+        <li>
+          <a class="selected" id="allWorks" onclick="changeClass(this)" href="#/">All</a>
+        </li>
+        <li>
+          <a href="#active" id="activedItems" onclick="changeClass(this)">Active</a>
+        </li>
+        <li>
+          <a href="#completed" id="completedTodos" onclick="changeClass(this)">Completed</a>
+        </li>
+      </ul>
+      <button class="clear-completed" id="btnClear">Clear completed</button>
+    </footer>
+  </section>
+
+  <script src="todo-list.js"></script>
+
+  <footer style="margin-top: 400px;text-align:center;">By Kai Simpson ©</footer>
+  <footer style="text-align: center;">Powered By <a href="http://spstudios.gq/" style="color: gray;">SP Studios</a><br><a href="#" style="color: gray;">Other Projects</a></footer>
+  <footer style="text-align:center;"><a href="index.html"><img src="transparent_logo.png" style="width: 100px;height:100px;"></a></footer>
+</body>
+
+</html>
